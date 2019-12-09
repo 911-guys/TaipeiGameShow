@@ -1,0 +1,273 @@
+html {
+  scroll-behavior: smooth;
+  body {
+    margin: 0;
+    // transition: 0.5s;
+    a {
+      .topBottom {
+        background-size: contain;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 10;
+      }
+      .topBottom:hover {
+        background-image: url("./TGSpicture/TOP_hover.png");
+      }
+    }
+
+    nav {
+      z-index: 11;
+      height: 50px;
+      width: 100vw;
+      background-color: black;
+      position: fixed;
+      top: 20px;
+      .container {
+        display: flex;
+        justify-content: space-around;
+        height: 100%;
+        .navBottom {
+          border: black solid 1px;
+          text-align: center;
+          width: 20%;
+          height: 100%;
+          font-size: 30px;
+          color: burlywood;
+        }
+      }
+    }
+    #banner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      // border: black solid 1px;
+      background-attachment: fixed;
+      .bgColor {
+        width: 100%;
+        height: 100%;
+        background-color: rgb(5, 5, 47);
+        position: absolute;
+        z-index: 1;
+      }
+      .Bannerbackground {
+        width: 100%;
+        height: 100%;
+        // background-repeat: no-repeat;
+        // background-size: contain;
+        // background-color: burlywood;
+        .swiper-wrapper {
+          .swiper-slide {
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0.2;
+          }
+        }
+      }
+      .timeCountDown {
+        position: absolute;
+        width: 300px;
+        height: 90px;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: chartreuse;
+        z-index: 10;
+      }
+      .logoBox {
+        position: absolute;
+        width: 500px;
+        height: 150px;
+        // background-color: chartreuse;
+        background-image: url("./TGSpicture/logo_1.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        z-index: 10;
+      }
+    }
+    .page1_title {
+      width: 100%;
+      // height: 100px;
+      border: black solid 1px;
+      font-size: 45px;
+      padding: 10px;
+      text-align: center;
+    }
+    .page1 {
+      // height: 100vh;
+      .row {
+        .card {
+          margin: 80px 0;
+          height: 60vh;
+        }
+      }
+    }
+
+    .page1_2 {
+      height: 100vh;
+      border: black solid 1px;
+    }
+    .page2_title {
+      width: 100%;
+      // height: 100px;
+      border: black solid 1px;
+      font-size: 45px;
+      padding: 10px;
+      text-align: center;
+    }
+    .page2 {
+      height: 100vh;
+      padding: 0;
+      .topSelecter {
+        display: flex;
+        .selectItem.active {
+          width: 16%;
+          background-color: blanchedalmond;
+          border: solid black 1px;
+          border-bottom: none;
+          text-align: center;
+          padding: 5px;
+          margin-top: 10px;
+          border-radius: 10px 10px 0 0;
+        }
+        .selectItem {
+          width: 16%;
+          border: solid black 1px;
+          text-align: center;
+          padding: 5px;
+          margin-top: 10px;
+          border-radius: 10px 10px 0 0;
+        }
+      }
+      .eventBox {
+        height: 80%;
+        border: orange solid 1px;
+        .event.active {
+          height: 100%;
+          width: 100%;
+          margin: 0;
+          background-color: blanchedalmond;
+          border: black solid 1px;
+          border-top: none;
+        }
+        .event {
+          display: none;
+          // height: 0;
+          // width: 0%;
+        }
+        .event_1 {
+          .leftArea {
+            height: 100%;
+            border: midnightblue solid 1px;
+          }
+          .rightArea {
+            height: 100%;
+            border: midnightblue solid 1px;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+            justify-content: space-around;
+            .bestGameArea {
+              width: 45%;
+              height: 25%;
+              // margin: 30px;
+              border: black solid 1px;
+            }
+          }
+        }
+        .event_2 {
+          display: flex;
+          align-content: space-around;
+          justify-content: space-around;
+
+          .event2_step {
+            position: relative;
+            height: 40%;
+            // width: 100%;
+            border: solid black 1px;
+          }
+          #step1 {
+            &:before {
+              content: "";
+              position: absolute;
+              background-image: url("./TGSpicture/arrRight.png");
+              background-size: contain;
+              background-repeat: no-repeat;
+              width: 100px;
+              height: 100px;
+              left: 100%;
+              top: 35%;
+            }
+          }
+          #step2 {
+            &:before {
+              content: "";
+              position: absolute;
+              background-image: url("./TGSpicture/arrDown.png");
+              background-size: contain;
+              background-repeat: no-repeat;
+              width: 80px;
+              height: 80px;
+              left: 40%;
+              top: 100%;
+            }
+          }
+          #step3 {
+            &:before {
+              content: "";
+              position: absolute;
+              background-image: url("./TGSpicture/arrLeft.png");
+              background-size: contain;
+              background-repeat: no-repeat;
+              width: 100px;
+              height: 100px;
+              left: 100%;
+              top: 35%;
+            }
+          }
+        }
+        .event_3 {
+          .textBar {
+            text-align: center;
+            font-size: 25px;
+            padding: 20px;
+          }
+          .girlSwiper {
+            .swiper-wrapper {
+              // display: flex;
+              width: 100%;
+              height: 100%;
+              .swiper-slide {
+                border: black solid 1px;
+                width: 50%;
+                height: 50vh;
+              }
+            }
+          }
+        }
+        .knowBottom {
+          position: relative;
+          width: 100px;
+          height: 60px;
+          background-color: orchid;
+          .knowList {
+            display: none;
+          }
+          .knowList.active {
+            position: absolute;
+            width: 70vw;
+            height: 70vh;
+            top: 100%;
+            left: 10%;
+          }
+        }
+      }
+    }
+  }
+}

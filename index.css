@@ -1,0 +1,295 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html body {
+  margin: 0;
+}
+
+html body a .topBottom {
+  background-size: contain;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 10;
+}
+
+html body a .topBottom:hover {
+  background-image: url("./TGSpicture/TOP_hover.png");
+}
+
+html body nav {
+  z-index: 11;
+  height: 50px;
+  width: 100vw;
+  background-color: black;
+  position: fixed;
+  top: 20px;
+}
+
+html body nav .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 100%;
+}
+
+html body nav .container .navBottom {
+  border: black solid 1px;
+  text-align: center;
+  width: 20%;
+  height: 100%;
+  font-size: 30px;
+  color: burlywood;
+}
+
+html body #banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+html body #banner .bgColor {
+  width: 100%;
+  height: 100%;
+  background-color: #05052f;
+  position: absolute;
+  z-index: 1;
+}
+
+html body #banner .Bannerbackground {
+  width: 100%;
+  height: 100%;
+}
+
+html body #banner .Bannerbackground .swiper-wrapper .swiper-slide {
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.2;
+}
+
+html body #banner .timeCountDown {
+  position: absolute;
+  width: 300px;
+  height: 90px;
+  top: 15%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: chartreuse;
+  z-index: 10;
+}
+
+html body #banner .logoBox {
+  position: absolute;
+  width: 500px;
+  height: 150px;
+  background-image: url("./TGSpicture/logo_1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+html body .page1_title {
+  width: 100%;
+  border: black solid 1px;
+  font-size: 45px;
+  padding: 10px;
+  text-align: center;
+}
+
+html body .page1 .row .card {
+  margin: 80px 0;
+  height: 60vh;
+}
+
+html body .page1_2 {
+  height: 100vh;
+  border: black solid 1px;
+}
+
+html body .page2_title {
+  width: 100%;
+  border: black solid 1px;
+  font-size: 45px;
+  padding: 10px;
+  text-align: center;
+}
+
+html body .page2 {
+  height: 100vh;
+  padding: 0;
+}
+
+html body .page2 .topSelecter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+html body .page2 .topSelecter .selectItem.active {
+  width: 16%;
+  background-color: blanchedalmond;
+  border: solid black 1px;
+  border-bottom: none;
+  text-align: center;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+html body .page2 .topSelecter .selectItem {
+  width: 16%;
+  border: solid black 1px;
+  text-align: center;
+  padding: 5px;
+  margin-top: 10px;
+  border-radius: 10px 10px 0 0;
+}
+
+html body .page2 .eventBox {
+  height: 80%;
+  border: orange solid 1px;
+}
+
+html body .page2 .eventBox .event.active {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: blanchedalmond;
+  border: black solid 1px;
+  border-top: none;
+}
+
+html body .page2 .eventBox .event {
+  display: none;
+}
+
+html body .page2 .eventBox .event_1 .leftArea {
+  height: 100%;
+  border: midnightblue solid 1px;
+}
+
+html body .page2 .eventBox .event_1 .rightArea {
+  height: 100%;
+  border: midnightblue solid 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+html body .page2 .eventBox .event_1 .rightArea .bestGameArea {
+  width: 45%;
+  height: 25%;
+  border: black solid 1px;
+}
+
+html body .page2 .eventBox .event_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+html body .page2 .eventBox .event_2 .event2_step {
+  position: relative;
+  height: 40%;
+  border: solid black 1px;
+}
+
+html body .page2 .eventBox .event_2 #step1:before {
+  content: "";
+  position: absolute;
+  background-image: url("./TGSpicture/arrRight.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  left: 100%;
+  top: 35%;
+}
+
+html body .page2 .eventBox .event_2 #step2:before {
+  content: "";
+  position: absolute;
+  background-image: url("./TGSpicture/arrDown.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  left: 40%;
+  top: 100%;
+}
+
+html body .page2 .eventBox .event_2 #step3:before {
+  content: "";
+  position: absolute;
+  background-image: url("./TGSpicture/arrLeft.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  left: 100%;
+  top: 35%;
+}
+
+html body .page2 .eventBox .event_3 .textBar {
+  text-align: center;
+  font-size: 25px;
+  padding: 20px;
+}
+
+html body .page2 .eventBox .event_3 .girlSwiper .swiper-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+html body .page2 .eventBox .event_3 .girlSwiper .swiper-wrapper .swiper-slide {
+  border: black solid 1px;
+  width: 50%;
+  height: 50vh;
+}
+
+html body .page2 .eventBox .knowBottom {
+  position: relative;
+  width: 100px;
+  height: 60px;
+  background-color: orchid;
+}
+
+html body .page2 .eventBox .knowBottom .knowList {
+  display: none;
+}
+
+html body .page2 .eventBox .knowBottom .knowList.active {
+  position: absolute;
+  width: 70vw;
+  height: 70vh;
+  top: 100%;
+  left: 10%;
+}
+/*# sourceMappingURL=index.css.map */
